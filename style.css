@@ -1,0 +1,372 @@
+/* Reseting Layout */
+* {
+   padding: 0;
+   margin: 0;
+}
+/* Formatting the top white bar */
+header {
+   background-color: white;
+   position: sticky;
+   top: 0;
+   z-index: 2;
+}
+.header1 {
+   display: flex;
+   flex-direction: row;
+   max-width: 45%;
+   justify-content: space-evenly;
+   align-items: center;
+   margin: auto;
+   flex-wrap: wrap;
+}
+.phone1, .mail1, .website1{
+   width: 15px;
+   height: 15px;
+   vertical-align: middle;
+}
+.phone2, .mail2, .website2{
+   display: inline-block;
+   vertical-align: middle;
+   margin: 0 0 0 5px;
+   font-family: sans-serif;
+   font-size: 11px;
+   color: black;
+   text-decoration: none;
+}
+/* Formatting the Orange header */
+.header2 {
+   background-color: #f15323;
+   height: 8.5rem;
+   text-align: center;
+}
+.gamepad {
+   height: 30%;
+   display: inline-block;
+   margin: 0 auto 5px auto;
+   padding-top: 25px;
+}
+.title {
+   text-transform: uppercase;
+   text-align: center;
+   color: white;
+   font-family: sans-serif;
+   letter-spacing: 4px;
+   margin-bottom: 0;
+}
+.title-describtion {
+   font-family: sans-serif;
+   text-align: center;
+   color: white;
+   letter-spacing: 6px;
+   margin-top: 0;
+   text-transform: capitalize;
+   font-weight: bold;
+}
+.header2 h1 span{
+   color: black;
+}
+.header2 p span{
+   color: black;
+}
+/* Formatting the navigation bar */
+nav {
+   position: sticky;
+   top: 154px;
+   height: 40px;
+   background-color: #1a1b1f;
+   z-index: 1;
+}
+.name {
+   display: flex;
+   list-style: none;
+   color: white;
+   flex-direction: row;
+   justify-content: space-around;
+   min-width: 60%;
+   max-width: 45%;
+   margin-left: auto;
+   margin-right: auto;
+}
+.logo{
+   font-family: Tahoma;
+   font-weight: bold;
+   text-decoration: none;
+   letter-spacing: 2px;
+   font-size: 200%;
+   color: #f15323;
+}
+.line {
+   border-right: 1px solid #ccc;
+   width: 1px;
+   height: 26px;
+   margin-top: 7px;
+}
+nav ul li{
+   padding-top: 10px;
+}
+nav ul li a{
+   font-size: 13px;
+   font-family: sans-serif;
+   color: white;
+   text-decoration: none;
+   cursor: context-menu;
+}
+.drop1 {
+   display: none;
+   flex-direction: column;
+   align-items: center;
+   background-color: #1a1b1f;
+   padding: 5px;
+   padding-bottom: 0;
+   border: 1px solid white;
+   margin-top: 11px;
+   position: absolute;
+}
+.drop1 a {
+   color:white;
+   padding: 5px;
+   border-bottom: 1px solid white;
+   width: 100%;
+}
+nav ul li:hover .drop1{
+   display: flex;
+   padding-top: 0;
+}
+.drop1 a:hover {
+   background-color: #f15323;
+   cursor: pointer;
+}
+nav ul li:hover{
+   border-bottom: 2px solid #f15323;
+   text-align: center;
+   cursor: pointer;
+}
+.special .drop1 a{
+   padding-left: 20px;
+   padding-right: 20px;
+   width: 65%;
+}
+.special .drop1 a:hover{
+   padding-left: 20px;
+   padding-right: 20px;
+   width: 65%;
+}
+.hover:hover {
+   cursor: pointer;
+   border: none;
+}
+nav ul {
+   position: relative;
+}
+/* Formatting the search bar */
+input {
+   padding-left: 10px;
+   padding-right: 10px;
+}
+.search {
+   width: 25px;
+   height: 25px;
+   margin: 7px 0 0 120px;
+   position: absolute;
+   display: inline-block;
+}
+.search-in {
+   display: block;
+   float: right;
+   height: 50%;
+   margin: 7px 0 0 155px;
+   position: absolute;
+   outline: none;
+}
+/* Formatting main background */
+section {
+   background-image: url("Images/section1.jpg");
+   background-size: cover;
+   height: 38em;
+   background-attachment: fixed;
+}
+/* Formatting describtion of article 1 */
+.art1 {
+   background-color: rgba(26, 27, 31, 0.7);
+   width: 35em;
+   height: 19em;
+   text-align: left;
+   margin: 10% 0 0 17%;
+   position: absolute;
+   text-transform: capitalize;
+}
+section h1{
+   font-size: 2em;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 8% 5% 5%;
+}
+section p{
+   font-size: 1em;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   margin-left: 5%;
+   margin-right: 7%;
+   letter-spacing: 1px;
+   line-height: 20px;
+}
+.art1 button {
+   background-color: transparent;
+   border: none;
+   margin: 8% 5% 5%;
+   border: 1px solid white;
+   padding: 2% 4%;
+   border-radius: 5%;
+}
+.art1 button:hover {
+   background-color: #f15323;
+   border: 1px solid white;
+   cursor: pointer;
+}
+.art1 button:hover a{
+   color: black;
+}
+.art1 button a {
+   text-decoration: none;
+   color: white;
+   font-size: 1em;
+}
+/* Formatting describtion of article 2 */
+/* Register a new account */
+.art2 {
+   background-color: rgba(26, 27, 31, 0.7);
+   width: 25em;
+   height: 19em;
+   text-align: center;
+   margin: 10% 0 0 65%;
+   padding: auto;
+   position: absolute;
+   text-transform: capitalize;
+}
+section article input:not(.Register) {
+   display: block;
+   height: 12%;
+   width: 70%;
+   margin: 3% 0 4% 15%;
+   outline: none;
+   background-color: transparent;
+   color: white;
+   border: 1px solid white;
+}
+section article input::placeholder {
+   color: white;
+   text-align: center;
+}
+input:focus::placeholder {
+   color: transparent;
+}
+.new-acc {
+   font-size: 1.6em;
+}
+.Register {
+   background-color: #f15323;
+   height: 11%;
+   width: 38%;
+   margin: 2%;
+   cursor: pointer;
+   color: white;
+   border: none;
+   font-family: sans-serif;
+   border-radius: 8px;
+   text-transform: uppercase;
+}
+.Register:hover {
+   background-color: #cd3507;
+}
+/* Adding the white section */
+.art3 {
+   background-color: white;
+   height: 85%;
+   width: 100%;
+}
+.title1 {
+   display: inline-block;  
+   color: black;
+   text-transform: uppercase;
+   font-size: 25px;
+   margin: 50px 0px 5px 300px;
+}
+.line0 {
+   margin-top: 10%;
+   width: 40%;
+   background-color: black;
+   height: 4px;
+}
+.main-group {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   height: 70%;
+   margin: 50px 0px 5px 10px;
+}
+.group1 {
+   display: flex;
+   flex-direction: column;
+   margin: 0px 0px 5px 255px;
+   width: 35%;
+}
+.group2 {
+   display: flex;
+   flex-direction: column;
+   margin: 0px 260px 5px 0px;
+   width: 35%;
+}
+.art3 p {
+   color: black;
+   font-family: sans-serif;
+   margin-bottom: 15px;
+   line-height: 24px;
+   font-size: 18px;
+   position: static;
+}
+.art3 button {
+   display: inline-block;
+   margin: 0px 0px 5px 297px;
+   position: relative;
+   bottom: 20%;
+   background-color: #f15323;
+   padding: 15px 35px;
+   border: none;
+   color: white;
+   text-transform: uppercase;
+}
+.art3 button:hover {
+   cursor: pointer;
+   background-color: #cd3507;
+   outline: 2px solid #d7876f;
+}
+/* Adding a gray section */
+.art4 {
+   background-color: rgb(26, 27, 31);
+   height: 80%;
+   position: relative;
+   bottom: 15%;
+   display: flex;
+   align-content: center;
+}
+.title2 {
+   display: inline;
+   text-transform: uppercase;
+   font-size: 25px;
+   margin: 50px 0px 5px 300px;
+}
+.line1 {
+   margin-top: 10%;
+   width: 30%;
+   background-color: white;
+   height: 4px;
+}
+.group3, .group4, .group5 {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 6em;
+   padding-left: 5em;
+}
